@@ -25,6 +25,7 @@ public class Test {
 		int season = Integer.parseInt(month);
 		int se = Integer.parseInt(sex);
 		
+		
 		//나이출력
 		if(se==1 || se==2 || se==5 || se==6) {
 			System.out.println("나이 : "+old);
