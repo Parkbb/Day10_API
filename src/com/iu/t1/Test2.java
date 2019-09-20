@@ -18,8 +18,20 @@ public class Test2 {
 		int check=0;
 		int sum=0;
 		Scanner sc = new Scanner(System.in);
-		String number = "971222-1234567";
+		System.out.println("주민번호 입력");
+		String number = sc.next();
+		//1.split
+		//String [] numbers = number.split("");
+		
+		//2.substring
 		String num = number.substring(0, 6) + number.substring(7, 13);
+		
+		//3.charAt
+		//for(int i=0;i<number.length();i++){
+		//		char ch = number.charAt(i);
+		//		string n1 = String.valueof(ch);
+		//		int n = Integer.parseInt(n1);}
+		
 		System.out.println(num);
 		for(int i=0;i<num.length();i++) { //*9 다음에 *2 나오게 어떻게?
 			char a = num.charAt(i);
@@ -32,5 +44,10 @@ public class Test2 {
 			check = check + sum;
 			
 		}
+		
+
+		
+		
+		
 	}
 }
